@@ -1,9 +1,16 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+ const wordReversed = word.split("").reverse().join("")
+  return word === wordReversed  
 }
 
+  // Write your algorithm here
+
+
 /* 
-  Add your pseudocode here
+  Take in a string as an arguement.
+  create a new variable of the string separated into an array of characters, reverse the characters and join them back into a string.
+  compare new string with original string.
+  return true if the same, false if not.
 */
 
 /*
@@ -23,3 +30,5 @@ if (require.main === module) {
 }
 
 module.exports = isPalindrome;
+
+
